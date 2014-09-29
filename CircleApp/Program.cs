@@ -10,10 +10,11 @@ namespace CircleApp
     {
         static void Main(string[] args)
         {
-            Circle aCircle = new Circle();
-
             Console.Write("Enter Your Redious : ");
-            aCircle.radius = Convert.ToDouble(Console.ReadLine());
+            Circle aCircle = new Circle(Convert.ToDouble(Console.ReadLine()));
+
+            
+            
 
             Console.WriteLine("Diameter is: "+ aCircle.GetDiameter());
             Console.WriteLine("Perimeter is: "+aCircle.GetPerimeter());

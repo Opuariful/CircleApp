@@ -10,23 +10,28 @@ namespace CircleApp
 {
     class Circle
     {
-        public double radius;
-        
-        
-        
+        public double Radius { private get; set; }
+
+
+        public Circle(double radius)
+        {
+            Radius = radius;
+        }
+
+
         public double GetDiameter()
         {
-            return 2*radius;
+            return 2*Radius;
         }
 
         public double GetPerimeter()
         {
-            return 2*Math.PI*radius;
+            return 2*Math.PI*Radius;
         }
 
         public double GetArea()
         {
-            return Math.PI*radius*radius;
+            return Math.PI*Radius*Radius;
         }
     }
 }
